@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NeoChat - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .contact-section {
+      padding: 100px 10%;
+      max-width: 700px;
+      margin: auto;
+      color: #bdefff;
+    }
+
+    .contact-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 30px;
+      color: #00f0ff;
+      text-shadow: 0 0 8px #00f0ff66;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      background-color: rgba(17, 25, 38, 0.85);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00f0ff22;
+    }
+
+    input,
+    textarea {
+      padding: 12px 16px;
+      border: 1px solid #00f0ff44;
+      background-color: #111926;
+      color: #bdefff;
+      font-size: 15px;
+      border-radius: 8px;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    input:focus,
+    textarea:focus {
+      border-color: #00f0ff;
+      box-shadow: 0 0 8px #00f0ff55;
+    }
+
+    button {
+      background-color: #00aaff;
+      color: white;
+      padding: 12px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0077cc;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .social-links a {
+      color: #00f0ff;
+      margin: 0 12px;
+      font-size: 20px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #121414;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+
+    @media (max-width: 600px) {
+      .contact-section {
+        padding: 80px 20px;
+      }
+
+      .contact-section h2 {
+        font-size: 28px;
+      }
+    }
+
+    .site-footer {
+      background-color: #0a0f1c;
+      color: #00f0ff99;
+      text-align: center;
+      padding: 20px 10%;
+      border-top: 1px solid #00f0ff22;
+      box-shadow: 0 -2px 10px #00f0ff11;
+      font-size: 14px;
+    }
+
+    .site-footer strong {
+      color: #00f0ff;
+    }
+
+    .site-footer span {
+      color: #00aaff;
+    }
+
+    .footer-links a {
+      color: #00f0ff;
+      text-decoration: none;
+      margin: 0 6px;
+      transition: color 0.3s ease;
+    }
+
+    .footer-links a:hover {
+      color: #00aaff;
+      text-shadow: 0 0 5px #00f0ff;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1>AskMe.<span>ai</span></h1>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <div class="items">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <!-- <li><a href="contact.html">Contact</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Floating blocks -->
+  <div class="floating-block" style="top: 10%; left: 10%;"></div>
+  <div class="floating-block" style="top: 80%; left: 80%;"></div>
+
+  <!-- Contact Content -->
+  <section class="contact-section">
+    <h2>Contact the Developer</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea rows="5" name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="social-links">
+      <h3>Follow UjjwalBytes</h3>
+      <a href="https://github.com/UjjwalBytes" title="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/ujjwal-kesharwani-4b2b10337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+        title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/shine_it_uk?igsh=NGVlZG93OHN0bjhk" title="Instagram"><i
+          class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 <strong>AskMe.ai</strong> • Developed by <span>Ujjwal Kesharwani</span></p>
+      <p class="footer-links">
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+      </p>
+    </div>
+  </footer>
+
+
+  <!-- Toggle menu -->
+  <script>
+    document.querySelector(".hamburger").addEventListener("click", () => {
+      document.querySelector(".items").classList.toggle("active");
+    });
+
+    // Prevent actual form submission (for demo)
+    document.querySelector("form").addEventListener("submit", (e) => {
+      e.preventDefault();
+      alert("Message sent (demo)!");
+    });
+  </script>
+</body>
+
+</html>

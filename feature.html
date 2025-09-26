@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AskMe.ai - Features</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .features-section {
+      padding: 100px 10%;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .features-section h2 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #00f0ff;
+      text-shadow: 0 0 8px #00f0ff66;
+    }
+
+    .feature {
+      background-color: rgba(17, 25, 38, 0.85);
+      padding: 20px 30px;
+      margin-bottom: 30px;
+      border-left: 4px solid #00f0ff;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00f0ff22;
+      transition: transform 0.3s ease;
+    }
+
+    .feature:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #00f0ff55;
+    }
+
+    .feature h3 {
+      color: #00aaff;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      color: #bdefff;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 600px) {
+      .features-section {
+        padding: 80px 20px;
+      }
+
+      .features-section h2 {
+        font-size: 28px;
+      }
+
+      .feature h3 {
+        font-size: 20px;
+      }
+    }
+    .site-footer {
+  background-color: #0a0f1c;
+  color: #00f0ff99;
+  text-align: center;
+  padding: 20px 10%;
+  border-top: 1px solid #00f0ff22;
+  box-shadow: 0 -2px 10px #00f0ff11;
+  font-size: 14px;
+}
+
+.site-footer strong {
+  color: #00f0ff;
+}
+
+.site-footer span {
+  color: #00aaff;
+}
+
+.footer-links a {
+  color: #00f0ff;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #00aaff;
+  text-shadow: 0 0 5px #00f0ff;
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <h1>AskMe.<span>ai</span></h1>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <div class="items">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <!-- <li><a href="feature.html">Features</a></li> -->
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Floating blocks -->
+  <div class="floating-block" style="top: 15%; left: 25%;"></div>
+  <div class="floating-block" style="top: 65%; left: 75%;"></div>
+
+  <!-- Features Content -->
+  <section class="features-section">
+    <h2>Why Choose AskMe.ai?</h2>
+
+    <div class="feature">
+      <h3>🔮 Intelligent AI Responses</h3>
+      <p>Powered by state-of-the-art language models, AskMe.ai understands your queries and provides smart, human-like responses instantly.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🎨 Futuristic Design</h3>
+      <p>Immerse yourself in a sci-fi inspired interface with glowing effects, animations, and a dark theme optimized for modern devices.</p>
+    </div>
+
+    <div class="feature">
+      <h3>⚡ Super Fast & Lightweight</h3>
+      <p>No heavy frameworks — just sleek, responsive performance optimized for both desktop and mobile users.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🔐 Privacy First</h3>
+      <p>Your messages stay on your device unless connected to a backend. AskMe.ai prioritizes your privacy.</p>
+    </div>
+
+    <div class="feature">
+      <h3>🛠️ Easy Customization</h3>
+      <p>Open source and modular. You can extend AskMe.ai with APIs, theme changes, or new features anytime you want.</p>
+    </div>
+  </section>
+
+  <!-- footer -->
+
+  <footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <strong>AskMe.ai</strong> • Developed by <span>Ujjwal Kesharwani</span></p>
+    <p class="footer-links">
+      <a href="index.html">Home</a> | 
+      <a href="about.html">About</a> | 
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+
+
+  <!-- Toggle menu -->
+  <script>
+    document.querySelector(".hamburger").addEventListener("click", () => {
+      document.querySelector(".items").classList.toggle("active");
+    });
+  </script>
+</body>
+</html>

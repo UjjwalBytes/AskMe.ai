@@ -1,0 +1,102 @@
+=
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>askMe.ai</title>
+  <link rel="icon" href="images/ub.jpg" type="image/jpg">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a style="text-decoration: none;" href="about.html"><h1>AskMe.<span>ai</span></h1></a>
+    </div>
+    <div class="hamburger">&#9776;</div>
+    <div class="items">
+      <ul>
+        <li><a href="#start-screen">Home</a></li>
+        <li><a href="feature.html">Features</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+<!-- Start Screen -->
+<section class="start-screen" id="start-screen">
+  <h2 >Welcome to <span>AskMe.</span>ai</h2>
+  <p id="typewriter-text"></p>
+  <button id="start-chat-btn">Start Chat</button>
+</section>
+
+
+  <!-- Chat Section -->
+  <div class="chat-wrapper hidden" id="chat-section">
+    <div class="chat-container" id="chat-container">
+      <!-- Chat messages will be appended here -->
+      <div class="chat-message ai" id="ai-message"></div>
+
+      <!-- <div class="chat-message user">What's the weather like?</div> -->
+    </div>
+    <div class="ask-card">
+      <textarea id="userInput" rows="1" placeholder="Ask your Question..."></textarea>
+      <button class="send-btn" onclick="sendMessage()">&#9658;</button>
+    </div>
+  </div>
+
+  <!-- Floating Blocks -->
+  <div class="floating-block" style="top: 10%; left: 20%;"></div>
+  <div class="floating-block" style="top: 60%; left: 80%;"></div>
+  <div class="floating-block" style="top: 40%; left: 50%;"></div>
+
+
+    <!-- footer -->
+  
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="footer-content">
+    <p>&copy; 2025 <strong>AskMe.ai</strong> • Developed by <span>Ujjwal Kesharwani</span></p>
+    <p class="footer-links">
+      <a href="index.html">Home</a> | 
+      <a href="about.html">About</a> | 
+      <a href="contact.html">Contact</a>
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+
+  <!-- Optional: JS to switch screens -->
+   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+
+
+
+  <script>
+    document.getElementById("start-chat-btn").addEventListener("click", function () {
+      document.getElementById("start-screen").classList.add("hidden");
+      document.getElementById("chat-section").classList.remove("hidden");
+    });
+
+    document.querySelector(".hamburger").addEventListener("click", () => {
+      document.querySelector(".items").classList.toggle("active");
+    });
+  </script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
